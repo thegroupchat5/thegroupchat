@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | The Groupchat Think Tank</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      margin: 0;
+      color: #e2e8f0;
+    }
+    header {
+      background: #0a1120;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 1.6rem;
+      color: #38bdf8;
+      font-weight: 700;
+    }
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #38bdf8;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .section {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 30px;
+    }
+    .section p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+    }
+    /* Team Cards */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .team-card {
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #38bdf8;
+    }
+    .team-card h4 {
+      color: #38bdf8;
+      margin: 5px 0;
+    }
+    .team-card p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background: #0a1120;
+      color: #94a3b8;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Groupchat Think Tank</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="challenges.html">E-LAB Challenges</a>
+      <a href="ajira.html">Ajira</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="section">
+      <p>
+        The Groupchat Think Tank is a youth-driven innovation hub tackling pressing social and economic challenges across Rwanda and East Africa. By combining creativity, collaboration, and technology, we design solutions that impact lives and transform communities.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Our Problem Statement</h2>
+      <p>
+        Youth unemployment is one of the biggest challenges in our region, leaving many young people without sustainable career paths. We believe that <strong>tourism</strong> and <strong>agriculture</strong> hold untapped potential to create thousands of job opportunities for youth. Our mission is to bridge the gap by empowering young people with skills, resources, and access to opportunities in these sectors.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>
+        To empower youth through innovative programs, technology-driven platforms, and mentorship, enabling them to secure meaningful employment and create sustainable businesses in tourism and agriculture.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="team-card">
+          <img src="https://via.placeholder.com/150" alt="Keza Laura" />
+          <h4>Keza Laura</h4>
+          <p>Rwandan</p>
+        </div>
+        <div class="team-card">
+          <img src="https://via.placeholder.com/150" alt="Ganza Gavin" />
+          <h4>Ganza Gavin</h4>
+          <p>Rwandan</p>
+        </div>
+        <div class="team-card">
+          <img src="https://via.placeholder.com/150" alt="Anas Khalid" />
+          <h4>Anas Khalid</h4>
+          <p>Sudan</p>
+        </div>
+        <div class="team-card">
+          <img src="https://via.placeholder.com/150" alt="Panom Michael" />
+          <h4>Panom Michael</h4>
+          <p>South sudan</p>
+        </div>
+        <div class="team-card">
+          <img src="https://via.placeholder.com/150" alt="Amina Uwase" />
+          <h4>Hira Lorris</h4>
+          <p>Rwandan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="C:\Users\USER\Downloads\pic1.jpeg" alt="Gallery Image" />
+        <img src="C:\Users\USER\Downloads\pic2.jpeg" alt="Gallery Image" />
+        <img src="C:\Users\USER\Downloads\pic3.jpeg" alt="Gallery Image" />
+        <img src="C:\Users\USER\Downloads\pic4.jpeg" alt="Gallery Image" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 The Groupchat Think Tank
+  </footer>
+
+  <!-- Lightbox Script -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+  </div>
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach((img) => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
